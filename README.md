@@ -39,4 +39,3 @@ To generate more client files, run the following:
 
 Make sure you choose different IPs for you clients.
 
-Contributions are welcome!
