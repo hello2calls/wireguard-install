@@ -7,6 +7,8 @@ Just install the Wireguard VPN server and give me the client config **
 
 The script supports both IPv4 only and no iptables script here. iptables script is in seperate file.
 
+![Image Sample Output](https://github.com/abdsmd/wireguard-install/raw/master/download.png)
+
 
 ## Requirements
 
