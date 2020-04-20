@@ -34,13 +34,18 @@ AllowedIPs = $CLIENT_WG_IPV4/32" >> "/etc/wireguard/$SERVER_WG_NIC.conf"
 
 #################################
 
-    systemctl restart "wg-quick@$SERVER_WG_NIC"
-    echo -e "\nHere is your client config file as a QR Code:"
-    qrencode -t ansiutf8 -l L < "$HOME/$SERVER_WG_NIC-client-$CLIENT_NAME.conf"
-    echo "It is also available in $HOME/$SERVER_WG_NIC-client-$CLIENT_NAME.conf"
+systemctl restart "wg-quick@$SERVER_WG_NIC"
+echo -e "\nHere is your client config file as a QR Code:"
+qrencode -t ansiutf8 -l L < "$HOME/$SERVER_WG_NIC-client-$CLIENT_NAME.conf"
+echo "It is also available in $HOME/$SERVER_WG_NIC-client-$CLIENT_NAME.conf"
+echo ""
+cat $HOME/$SERVER_WG_NIC-client-$CLIENT_NAME.conf
 }
-## End Add Clients Function
 
+
+## End Add Clients Function
+#################################################################
+#################################################################
 #################################################################
 
 # Here Start The Script and check requirements
